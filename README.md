@@ -2,8 +2,7 @@ TextureView的用法
 1. TextureView 预览摄像头；TextureView进行播放
 2。MediaController的用法
 TextureVideoView是国外https://sprylab.com/en/home.html 网站的公司做出的第三方库。
-
-待上传github: texturevideoview.
+本项目修改自：https://github.com/sprylab/texturevideoview
 
 
 vlc播放音频
