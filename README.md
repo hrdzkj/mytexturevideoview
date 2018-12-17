@@ -23,21 +23,21 @@ as_aac_codec_fdk：音频原始数据pcm和压缩数据格式aac间的转换编�
 Android-as_video_recorder: 用到了ffmepg,x264,fdk.集成程度较高。
                            包括了视频的采集NV21,MediaCodec(硬)/x264(软)编码,egl渲染。
                            结合《音视频开发进阶》第6章 音视频的采集与编码 来看。
+   
+Android-OpenGLRenderer： openGL进行渲染  
+Android-FFmpegDecoder： 使用FFmpeg进行解码  
+Android-as_video_player/Android-live_video_player：实现的一个播放器（c++，ffmpeg  
+Android-Mp3Encoder：mp3编码（应该是书上的例子）  
+Android-AudioRecorder：音频录制  
+Android-AudioPlayer：音频播放  
+cross_compile_project： ffmpeg在android,windows,ios三个平台的编译流程  
+对音视频的学习思路：https://blog.csdn.net/sinat_31057219/article/details/79521374  
+采集-->编解码-->渲染-->封装-->串联  
+-->高级特性（剪裁、旋转、水印、滤镜，并学习 OpenGL 高级特性，如：VBO，VAO，FBO）  
+-->网络协议  
+-->学习开源项目（如 webrtc，ffmpeg，ijkplayer，librtmp 等等）  
+-->移植到android平台（ffmpeg，x264，librtmp）  
 
-Android-OpenGLRenderer： openGL进行渲染
-Android-FFmpegDecoder： 使用FFmpeg进行解码
-Android-as_video_player/Android-live_video_player：实现的一个播放器（c++，ffmpeg）
-Android-Mp3Encoder：mp3编码（应该是书上的例子）
-Android-AudioRecorder：音频录制
-Android-AudioPlayer：音频播放
-cross_compile_project： ffmpeg在android,windows,ios三个平台的编译流程
-对音视频的学习思路：https://blog.csdn.net/sinat_31057219/article/details/79521374
-采集-->编解码-->渲染-->封装-->串联
--->高级特性（剪裁、旋转、水印、滤镜，并学习 OpenGL 高级特性，如：VBO，VAO，FBO）
--->网络协议
--->学习开源项目（如 webrtc，ffmpeg，ijkplayer，librtmp 等等）
--->移植到android平台（ffmpeg，x264，librtmp）
--->
 
 有一些是同一个项目是eclipse版本，同时有as版本的，就不写上了。
 
